@@ -1,0 +1,51 @@
+{
+  "name": "arhi-tect-urno-2",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "https://the-sociophobic.github.io/arhi-tect-urno-2/",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.92.4",
+    "@react-three/fiber": "^8.15.12",
+    "@tanstack/react-query": "^5.81.5",
+    "bootstrap": "^5.3.7",
+    "contentful": "^11.7.5",
+    "gh-pages": "^6.1.1",
+    "lodash": "^4.17.21",
+    "mobx": "^6.13.7",
+    "mobx-react-lite": "^4.1.0",
+    "react": "^18.2.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "three": "^0.159.0",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^22.7.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.2.17",
+    "@types/three": "^0.159.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "globals": "^15.15.0",
+    "path": "^0.12.7",
+    "sass": "^1.86.0",
+    "typescript": "^5.2.2",
+    "typescript-eslint": "^8.24.1",
+    "vite": "^5.3.1",
+    "vite-plugin-svgr": "^4.2.0"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

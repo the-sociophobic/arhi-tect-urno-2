@@ -1,0 +1,163 @@
+@import './vars.sass'
+@import './fonts.sass'
+@import './modificators.sass'
+
+@import '~bootstrap/scss/bootstrap.scss'
+
+
+*
+  padding: 0
+  margin: 0
+
+body
+  background-color: white
+  .App
+    width: 100vw
+    height: 100vh
+    min-height: 370px
+    position: relative
+    @extend .d-flex
+    @extend .flex-column
+    overflow-y: hidden
+    .Header
+      width: 100vw
+      position: fixed
+      top: 0
+      left: 0
+      @extend .d-flex
+      @extend .flex-row
+      @extend .align-items-start
+      padding-top: 28px
+      &__hint
+        margin-top: 2px
+      &__links
+        @extend .flex-grow-1
+        @extend .d-flex
+        @extend .flex-column
+        @extend .flex-lg-row
+        @extend .align-items-start
+        @extend .align-items-lg-center
+        @extend .justify-content-between
+        &__item
+          text-transform: uppercase
+          cursor: pointer
+          font-size: 16px
+          border-bottom: 1px solid rgba(255, 255, 255, 0)
+          transition: border .3s
+          color: rgba(255, 255, 255, 0.5)
+          &--selected
+            color: rgba(255, 255, 255, 1)
+            border-bottom: 1px solid white
+      &__logo
+        margin-top: -5px
+    .Footer
+      width: 100vw
+      position: fixed
+      bottom: 0
+      left: 0
+      &__title
+        font-family: 'Geologica-Medium', 'Arial', sans-serif
+        font-size: 20px
+        text-transform: uppercase
+        margin-bottom: 18px
+      &__description
+        font-size: 14px
+        margin-bottom: 25px
+      &__button
+        display: block
+        cursor: pointer
+        text-align: center
+        font-size: 12px
+        line-height: 35px
+        padding: 0 50px
+        border: 1px solid white
+        border-radius: 50px
+        margin-bottom: 32px
+    .content
+      position: relative
+      width: 100vw
+      overflow-x: hidden
+      @extend .d-flex
+      @extend .flex-column
+      @extend .flex-grow-1
+      @extend .justify-content-start
+      @extend .align-items-stretch
+
+.abs-cover
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+
+
+.video-container
+  display: none
+
+.Scene__container,
+// Обсудить с Сергеей Сергеевной в АБ
+.Background
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  height: 100vh
+.Background
+  background-color: #ACAA75
+  z-index: -1
+  &__1,
+  &__2,
+  &__3,
+  &__4,
+  &__5,
+  &__6
+    position: absolute
+    border-radius: 100%
+    filter: blur(17vh)
+  &__1
+    width: 100vw
+    height: 100vw
+    top: 20vh
+    left: -25vw
+    transform: rotate(30deg) scaleY(50%)
+    background-color: rgba(68, 65, 7, 0.5)
+    // background: radial-gradient(circle,rgba(68, 65, 7, 0.5) 0%, rgba(68, 65, 7, 0.5) 50%)
+  &__2
+    width: 100vw
+    height: 100vw
+    top: 20vh
+    right: -25vw
+    transform: rotate(30deg) scaleY(50%)
+    background-color: rgba(68, 65, 7, 0.5)
+    // background: radial-gradient(circle,rgba(68, 65, 7, 0.5) 0%, rgba(68, 65, 7, 0.5) 50%)
+  &__3
+    width: 40vh
+    height: 40vh
+    top: 30vh
+    left: -10vw
+    transform: scaleY(50%)
+    background-color: rgba(219, 219, 219, 0.5)
+    // background: radial-gradient(circle,rgba(219, 219, 219, 0.5) 0%, rgba(219, 219, 219, 0.5) 50%)
+  &__4
+    width: 50vh
+    height: 50vh
+    bottom: 0vh
+    left: 10vw
+    background-color: rgba(245, 243, 180, 0.5)
+    // background: radial-gradient(circle,rgba(245, 243, 180, 0.5) 0%, rgba(245, 243, 180, 0.5) 50%)
+  &__5
+    width: 50vh
+    height: 50vh
+    top: 0vh
+    right: 10vw
+    background-color: rgba(245, 243, 180, 0.5)
+    // background: radial-gradient(circle,rgba(245, 243, 180, 0.5) 0%, rgba(245, 243, 180, 0.5) 50%)
+  &__6
+    width: 55vh
+    height: 55vh
+    top: 55%
+    left: 50%
+    transform: translate(-50%, -50%)
+    background-color: rgba(0, 0, 0, .3)
+    // background: radial-gradient(circle,rgba(245, 243, 180, 0.5) 0%, rgba(245, 243, 180, 0.5) 50%)
+    filter: blur(7vh)
